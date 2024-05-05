@@ -6,6 +6,7 @@ const dotenv = require("dotenv");
 
 const loginRouter = require("./Router/Login");
 const registerRouter = require("./Router/Register");
+const productsRouter = require("./Router/Products");
 
 dotenv.config();
 
@@ -26,3 +27,4 @@ app.use(express.json());
 
 app.use("/api", loginRouter);
 app.use("/api", registerRouter);
+app.use("/api", productsRouter);

@@ -4,10 +4,7 @@ const product = require("../Model/Products");
 
 router.get("/products", async (req, res) => {
   try {
-    const searchQuery = req.params.searchquery;
-    const products = await product.find({
-      name: { $regex: searchQuery, $options: "i" },
-    });
+    const products = await product.find();
     res.json(products);
   } catch (error) {
     res.json({ message: error });
@@ -43,4 +40,4 @@ router.post("/product", async (req, res) => {
   }
 });
 
-exports.router = router;
+module.exports = router;

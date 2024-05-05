@@ -1,38 +1,20 @@
 {
-  "id":1,
-  "name": "Nike Air Max 270",
-  "price": 150,
-  "image": "https://www.sneakerhead.com/images/shoes/nike-air-max-270-ah8050-002.jpg",
-  "category": "Shoes",
-  "stock": 10,
-  "description": "The Nike Air Max",
+  "name": "Sample Product",
+  "price": 99.99,
+  "description": "This is a sample product",
+  "imageUrl": "http://example.com/sample.jpg",
+  "userId": "60d6c47e1f1b2c001f8e4d0a",
+  "category": "Electronics",
+  "quantity": 10,
+  "brand": "Sample Brand",
+  "color": "Red",
+  "size": "Medium",
   "discount": 10,
-  "rating": 4.5,
-  "numReviews": 10,
-  "countInStock": 10,
-  "brand": "Nike",
-  "reviews": [
-    {
-      "name": "John Doe",
-      "rating": 5,
-      "comment": "Excellent product"
-    }
-  ]
-}
-
- {
-    "username": "Joan of Arc",
-    "password": "Paris"
-  },
-
-{
-  "username": "Register",
-  "email": "reg@gmail.com",
-  "password": "123456",
-  "phonenumber": 1234567890,
-  "address": "abc",
-  "city": "xyz",
-  "state": "abc",
-  "country": "xyz",
-  "pincode": 123456
+  "freeshipping": true,
+  "featured": true,
+  "createdAt": "2022-01-01T00:00:00Z",
+  "updatedAt": "2022-01-01T00:00:00Z",
+  "reviews": [],
+  "rating": 0,
+  "sold": 0
 }
