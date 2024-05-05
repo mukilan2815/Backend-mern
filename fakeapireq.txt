@@ -1,0 +1,38 @@
+{
+  "id":1,
+  "name": "Nike Air Max 270",
+  "price": 150,
+  "image": "https://www.sneakerhead.com/images/shoes/nike-air-max-270-ah8050-002.jpg",
+  "category": "Shoes",
+  "stock": 10,
+  "description": "The Nike Air Max",
+  "discount": 10,
+  "rating": 4.5,
+  "numReviews": 10,
+  "countInStock": 10,
+  "brand": "Nike",
+  "reviews": [
+    {
+      "name": "John Doe",
+      "rating": 5,
+      "comment": "Excellent product"
+    }
+  ]
+}
+
+ {
+    "username": "Joan of Arc",
+    "password": "Paris"
+  },
+
+{
+  "username": "Register",
+  "email": "reg@gmail.com",
+  "password": "123456",
+  "phonenumber": 1234567890,
+  "address": "abc",
+  "city": "xyz",
+  "state": "abc",
+  "country": "xyz",
+  "pincode": 123456
+}
