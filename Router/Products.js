@@ -7,7 +7,30 @@ router.get("/products", async (req, res) => {
     const products = await product.find();
     res.json(products);
   } catch (error) {
-    res.json({ message: error });
+    res.status(500).json({ message: "Internal server error" });
+    console.error(error);
+  }
+});
+
+router.get("/products/:searchname", async (req, res) => {
+  try {
+    const searchName = req.params.searchname;
+    let products;
+
+    if (searchName) {
+      products = await product.find({
+        name: { $regex: searchName, $options: "i" },
+      });
+    } else {
+      products = await product.find();
+    }
+
+    res.json(products);
+    console.log("products", products);
+    console.log("searchName", searchName);
+  } catch (error) {
+    res.status(500).json({ message: "Internal server error" });
+    console.error(error);
   }
 });
 
@@ -37,6 +60,16 @@ router.post("/product", async (req, res) => {
     res.json(savedProduct);
   } catch (error) {
     res.json({ message: error });
+  }
+});
+
+router.get("/singleproduct/:id", async (req, res) => {
+  try {
+    const singleProduct = await product.findById(req.params.id);
+    res.json(singleProduct);
+  } catch (error) {
+    res.status(500).json({ message: "Internal server error" });
+    console.error(error);
   }
 });
 
