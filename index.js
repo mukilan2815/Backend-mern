@@ -8,6 +8,7 @@ const loginRouter = require("./Router/Login");
 const registerRouter = require("./Router/Register");
 const productsRouter = require("./Router/Products");
 const filterRouter = require("./Router/Filter");
+const cartRouter = require("./Router/Cart");
 
 dotenv.config();
 
@@ -30,3 +31,4 @@ app.use("/api", loginRouter);
 app.use("/api", registerRouter);
 app.use("/api", productsRouter);
 app.use("/api", filterRouter);
+app.use("/api", cartRouter);

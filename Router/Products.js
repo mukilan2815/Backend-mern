@@ -34,7 +34,7 @@ router.get("/products/:searchname", async (req, res) => {
   }
 });
 
-router.post("/product", async (req, res) => {
+router.post("/products", async (req, res) => {
   const newProduct = new product({
     name: req.body.name,
     price: req.body.price,
