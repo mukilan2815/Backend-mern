@@ -7,7 +7,7 @@ const dotenv = require("dotenv");
 const loginRouter = require("./Router/Login");
 const registerRouter = require("./Router/Register");
 const productsRouter = require("./Router/Products");
-const filterRouter = require("./Router/Filter");
+const filterRouter = require("./Router/filter");
 const cartRouter = require("./Router/Cart");
 
 dotenv.config();
